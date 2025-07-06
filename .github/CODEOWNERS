@@ -1,0 +1,93 @@
+# PDF Chat Bot - Code Ownership
+
+# Global owners - for any file not explicitly covered below
+* @team-leads @technical-lead
+
+# Documentation - Technical writers and product team
+docs/ @technical-writers @product-team
+*.md @technical-writers @technical-lead
+CONTRIBUTING.md @technical-lead @team-leads
+README.md @technical-lead @product-team
+
+# Source code - Backend team with technical lead
+src/ @backend-team @technical-lead
+pdf-chat-bot/src/ @backend-team @technical-lead
+
+# Core application files
+pdf-chat-bot/app.py @backend-team @technical-lead
+pdf-chat-bot/requirements.txt @backend-team @devops-team
+
+# Configuration and environment
+.env.example @devops-team @technical-lead
+.gitignore @devops-team @technical-lead
+
+# CI/CD and automation
+.github/ @devops-team @technical-lead
+.github/workflows/ @devops-team @backend-team
+scripts/ @devops-team @backend-team
+
+# Testing
+tests/ @qa-team @backend-team
+pdf-chat-bot/test_*.py @qa-team @backend-team
+
+# Database and vector store
+chroma_db/ @backend-team @devops-team
+pdf-chat-bot/data/ @backend-team @product-team
+
+# Frontend/UI components (if any)
+# static/ @frontend-team @ux-team
+# templates/ @frontend-team @ux-team
+
+# Deployment and infrastructure
+docker/ @devops-team @technical-lead
+Dockerfile @devops-team @backend-team
+docker-compose.yml @devops-team @backend-team
+
+# Package management
+package.json @frontend-team @devops-team
+requirements*.txt @backend-team @devops-team
+
+# Specific component ownership
+pdf-chat-bot/src/pdf_processor.py @backend-team @data-team
+pdf-chat-bot/src/vector_store.py @backend-team @data-team
+pdf-chat-bot/src/chat_engine.py @backend-team @ai-team
+pdf-chat-bot/src/utils.py @backend-team @technical-lead
+
+# Performance and monitoring
+pdf-chat-bot/logs/ @devops-team @backend-team
+
+# Security-sensitive files
+.env @devops-team @security-team
+*.key @security-team @devops-team
+*.pem @security-team @devops-team
+
+# Documentation specific areas
+docs/user-guide.md @technical-writers @product-team @ux-team
+docs/technical-documentation.md @technical-lead @backend-team @technical-writers
+docs/api/ @backend-team @technical-writers
+docs/deployment/ @devops-team @technical-writers
+
+# Examples and samples
+examples/ @technical-writers @backend-team
+samples/ @technical-writers @backend-team
+
+# Build and release
+build/ @devops-team @technical-lead
+dist/ @devops-team @technical-lead
+.github/workflows/release.yml @devops-team @technical-lead
+
+# Team-specific configuration files
+.vscode/ @frontend-team @backend-team
+.idea/ @backend-team
+pyproject.toml @backend-team @technical-lead
+setup.py @backend-team @technical-lead
+
+# Quality assurance and linting
+.flake8 @qa-team @backend-team
+.black @qa-team @backend-team
+.isort.cfg @qa-team @backend-team
+.pre-commit-config.yaml @qa-team @devops-team
+
+# Emergency contacts for critical issues
+# For production outages or security issues, contact:
+# @technical-lead @devops-team @security-team

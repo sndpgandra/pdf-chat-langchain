@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/sndpgandra/pdf-chat-langchain/discussions
+    about: Ask questions, share ideas, and discuss the project with the community
+  - name: 🚨 Security Vulnerability
+    url: https://github.com/sndpgandra/pdf-chat-langchain/security/advisories/new
+    about: Report security vulnerabilities privately
+  - name: 📖 Documentation
+    url: https://github.com/sndpgandra/pdf-chat-langchain/blob/main/docs/README.md
+    about: Read the comprehensive documentation
+  - name: ❓ Support
+    url: https://github.com/sndpgandra/pdf-chat-langchain/discussions/categories/q-a
+    about: Get help and support from the community
