@@ -5,5 +5,4 @@ chromadb
 sentence-transformers
 pypdf
 python-dotenv
-tiktoken
 psutil

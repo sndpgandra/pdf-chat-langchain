@@ -59,7 +59,7 @@ cover/
 .DS_Store
 pdf-chat-bot/.DS_Store
 pdf-chat-bot/data/uploads/.DS_Store
-
+pdf-chat-bot/data/uploads/*.pdf
 # Django stuff:
 *.log
 local_settings.py

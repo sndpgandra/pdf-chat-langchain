@@ -10,7 +10,6 @@ from typing import List, Dict
 import pypdf
 from pathlib import Path
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import tiktoken
 
 class PDFProcessor:
     def __init__(self):
@@ -38,7 +37,6 @@ class TextChunker:
         self.logger = logging.getLogger(__name__)
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        self.tokenizer = tiktoken.get_encoding("cl100k_base")
     
     def create_chunks(self, documents: List[Dict]) -> List[Dict]:
         """Create overlapping chunks with metadata"""
@@ -46,7 +44,7 @@ class TextChunker:
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap,
-            length_function=lambda text: len(self.tokenizer.encode(text)),
+            length_function=len,
         )
         
         chunks = []
